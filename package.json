@@ -1,0 +1,28 @@
+{
+  "name": "aim33-directory",
+  "version": "1.0.0",
+  "description": "Local Business Directory",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aimee-MacDonald/aim33-directory.git"
+  },
+  "keywords": [
+    "Westcoast",
+    "Business",
+    "Directory"
+  ],
+  "author": "Aimee MacDonald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aimee-MacDonald/aim33-directory/issues"
+  },
+  "homepage": "https://github.com/Aimee-MacDonald/aim33-directory#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}
