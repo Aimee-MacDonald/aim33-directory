@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="/styles/survey.css")
+    title Aim33 Business Directory - Survey
+
+  body
+    form(action="/survey" method="post")
+      label(for="name") Business Name:
+      input(placeholder="Business Name", name="name", id="name")
+
+      label(for="address") Business Address:
+      input(placeholder="Business Address", name="address", id="address")
+
+      label(for="description") Business Description:
+      textarea(placeholder="Business Description", name="description", id="description")
+
+      label(for="hours") Business Hours:
+      input(placeholder="Business Hours", name="hours", id="hours")
+
+      label(for="number") Contact Number:
+      input(placeholder="Contact Number", name="number", id="number")
+
+      label(for="whatsapp") WhatsApp Number:
+      input(placeholder="WhatsApp Number", name="whatsapp", id="whatsapp")
+
+      label(for="website") Business Website:
+      input(placeholder="Website", name="website", id="website")
+
+      button Submit

@@ -11,4 +11,12 @@ app.get("/", (req, res) => {
   res.status(200).render("holding");
 });
 
+app.get("/survey", (req, res) => {
+  res.status(200).render("survey");
+});
+
+app.post("/survey", (req, res) => {
+  res.redirect("/");
+});
+
 app.listen(process.env.PORT || 8080);
