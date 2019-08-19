@@ -11,4 +11,4 @@ app.get("/", (req, res) => {
   res.status(200).render("holding");
 });
 
-app.listen(8080, console.log("App Started on Port 8080"));
+app.listen(process.env.PORT || 8080);

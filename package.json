@@ -2,9 +2,12 @@
   "name": "aim33-directory",
   "version": "1.0.0",
   "description": "Local Business Directory",
+  "engines": {
+    "node": "9.4.0"
+  },
   "main": "app.js",
   "scripts": {
-    "start": "node app"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   },
   "homepage": "https://github.com/Aimee-MacDonald/aim33-directory#readme",
   "dependencies": {
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "pug": "^2.0.4"
   }
