@@ -19,4 +19,8 @@ app.post("/survey", (req, res) => {
   res.redirect("/");
 });
 
+app.get("/index", (req, res) => {
+  res.status(200).render("index");
+});
+
 app.listen(process.env.PORT || 8080);
