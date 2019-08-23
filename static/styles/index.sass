@@ -1,0 +1,58 @@
+body
+  background-color: pink
+  margin: 0
+  overflow-x: hidden
+
+header
+  background-color: purple
+  height: 0.5rem
+  width: 100%
+  position: fixed
+
+h1
+  margin: 0
+
+h2
+  margin: 0
+
+.full-container
+  background-color: lime
+  width: 100vw
+  height: 100vh
+
+nav
+  position: fixed
+  background-color: darkblue
+  width: 0.5rem
+  height: 100%
+
+#company-area
+  display: flex
+  flex-flow: nowrap column
+
+#company-image
+  background-color: green
+  width: 100%
+  height: 20rem
+
+#company-info
+  margin-top: 1rem
+  margin-left: 1rem
+
+footer
+  background-color: purple
+
+@media (min-width: 50rem)
+  #company-area
+    flex-flow: nowrap row
+    background-color: pink
+    justify-content: space-around
+
+  #company-image
+    background-color: purple
+    width: 30rem
+    height: 30rem
+
+  #company-info
+    order: -1
+    margin-top: 2rem

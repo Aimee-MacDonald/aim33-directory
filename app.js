@@ -49,4 +49,11 @@ app.get("/index", (req, res) => {
   res.status(200).render("index");
 });
 
+app.get("/api/getCompany", (req, res) => {
+  Company.find({}, (err, docs) => {
+    if(err) throw err;
+    res.status(200).send(docs);
+  });
+});
+
 app.listen(process.env.PORT || 8080);

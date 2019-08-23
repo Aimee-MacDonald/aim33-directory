@@ -8,12 +8,47 @@ html(lang="en")
     title Aim33 Business Directory
 
   body
-    h1 Aim33 Business Directory
+    header
+
+    div(class="full-container")
+      nav
+      div(id="company-area")
+        div(id="company-image")
+        div(id="company-info")
+          h1(id="name")
+          h2 Specialities
+          h2 Category
+          h2 Rating
+          h2 Description
+
+    div(id="company-feedback")
+      p Reviews
+
+    footer
+      p Created and Maintained by Aim33
+
     p Business Name:
+    p(id="name")
+
     p Business Address:
+    p(id="address")
+
     p Business Description:
+    p(id="description")
+
     p Business Hours:
+    p(id="hours")
+
     p Contact Number:
+    p(id="number")
+
     p WhatsApp Number:
+    p(id="whatsapp")
+
     p Business Website:
+    p(id="website")
+
     p Business Email:
+    p(id="email")
+
+  script(src="/scripts/index.js")
