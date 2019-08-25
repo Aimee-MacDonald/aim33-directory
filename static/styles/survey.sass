@@ -1,7 +1,6 @@
 body
   background-color: pink
   width: 100vw
-  height: 100vh
   display: flex
   justify-content: center
   align-items: center
@@ -19,7 +18,7 @@ form
     color: #c895e8
     font-size: 14pt
   input
-    padding: 0.5rem
+    padding: 0.5rem 0rem
     margin-bottom: 1.5rem
     border-radius: 0.2rem
     border: 0
@@ -28,7 +27,7 @@ form
     font-weight: bold
     border-bottom: 1px solid #c895e8
   textarea
-    padding: 0.5rem
+    padding: 0.5rem 0rem
     height: 4rem
     margin-bottom: 1.5rem
     border-radius: 0.2rem
@@ -48,3 +47,9 @@ form
     max-width: 15rem
     width: 100%
     align-self: center
+
+@media (min-width: 50rem)
+  form
+    margin: 2rem 0rem
+    padding: 2rem
+    border-radius: 0.5rem

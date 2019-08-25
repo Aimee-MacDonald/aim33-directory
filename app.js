@@ -30,13 +30,19 @@ app.get("/survey", (req, res) => {
 app.post("/survey", (req, res) => {
   var newCompany = new Company({
     name: req.body.name,
-    address: req.body.address,
+    category: req.body.category,
+    speciality: req.body.speciality,
     description: req.body.description,
     hours: req.body.hours,
     number: req.body.number,
     whatsapp: req.body.whatsapp,
+    address: req.body.address,
     website: req.body.website,
-    email: req.body.email
+    image: req.body.image,
+    email: req.body.email,
+    password: req.body.password,
+    rating: "0",
+    reviews: []
   });
 
   newCompany.save(err => {
