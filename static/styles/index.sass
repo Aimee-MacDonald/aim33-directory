@@ -15,11 +15,13 @@ h1
 h2
   margin: 0
 
+p
+  margin: 0
+
 .full-container
   background-color: lime
   width: 100vw
   height: 100vh
-
 nav
   position: fixed
   background-color: darkblue
@@ -36,8 +38,21 @@ nav
   height: 20rem
 
 #company-info
-  margin-top: 1rem
-  margin-left: 1rem
+  margin: 1.5rem
+  #description
+    margin: 1rem 0rem 2rem 0rem
+  #options
+    display: flex
+    justify-content: space-around
+    div
+      display: flex
+      flex-flow: nowrap column
+      align-items: center
+      .icon
+        background-color: purple
+        width: 3rem
+        height: 3rem
+        border-radius: 50%
 
 footer
   background-color: purple
@@ -49,7 +64,6 @@ footer
     justify-content: space-around
 
   #company-image
-    background-color: purple
     width: 30rem
     height: 30rem
 

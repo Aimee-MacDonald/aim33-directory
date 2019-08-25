@@ -19,13 +19,9 @@ function getCompanyInfo(){
       if(request.status === 200){
         var comp = JSON.parse(request.responseText)[0];
         el_name.innerText = comp.name;
-        el_address.innerText = comp.address;
         el_description.innerText = comp.description;
-        el_hours.innerText = comp.hours;
         el_number.innerText = comp.number;
         el_whatsapp.innerText = comp.whatsapp;
-        el_website.innerText = comp.website;
-        el_email.innerText = comp.email;
       } else {
         console.log("Error: " + request.status);
       }
